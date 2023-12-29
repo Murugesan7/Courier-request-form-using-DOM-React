@@ -4,10 +4,82 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Courier Request Form </title>
+    <link rel="stylesheet" href="./asserts/css/main.css">
   </head>
   <body>
-    <div id="app"></div>
+    
+
+<form class="">
+
+  <div class="bg-indigo-900 min-h-screen p-10 ">
+
+  <div class="bg-white rounded p-5 max-w-xl mx-auto">
+
+    <h4 class="font-semibold text-xl "> Request a Courier Pickup! </h4>
+  
+    
+    <div class="my-5 space-y-5">
+
+      <div class="grid grid-cols-2 gap-5">
+    <input type="text" class="px-4 py-1 rounded bg-gray-200 outline-none"
+     placeholder="Enter Your Name" >  
+
+     <input type="number" class="px-4 py-1 rounded bg-gray-200 outline-none"
+     placeholder="Enter Mobile number"  min="0" > 
+   </div>
+
+  
+     <input type="date" class="px-4 py-1 rounded bg-gray-200 outline-none w-full"
+     placeholder="" > 
+  
+
+
+     <textarea  name="address" class="px-4 py-1 rounded bg-gray-200 outline-none w-full"
+      cols="30" rows="3"
+     placeholder="pick up address" > 
+     </textarea>
+    <button type="button" class="px-3 py-1 rounded bg-indigo-500 
+    text-white  w-full hover:bg-indigo-600"> Create Pickup!  </button>  
+  
+  </div>
+
+  <div class="bg-white rounded p-5 max-w-xl mx-auto">
+
+    <h4 class="font-semibold text-xl "> Courier Requests </h4>
+  
+    
+    <div class="my-5 space-y-5">
+
+
+<table class="table table-fixed border w-full">
+  <tr>
+    <th class="px-2 py-1 border">Customer</th>
+    <th class="px-2 py-1 border">Pickup Date</th>
+    <th class="px-2 py-1 border ">Pickup Address</th>
+    <th class="px-2 py-1 border w-20"></th>
+  </tr>
+
+  <tr>
+    <td class="px-2 py-1 border">Murugesan.K</td>
+    <td class="px-2 py-1 border">30.12.2023</td>
+    <td class="px-2 py-1 border">KARAIKUDI</td>
+    <td class="px-2 py-1 border">
+      <button type="button" class="px-2 px-1 rounded 
+      bg-red-500 hover:bg-red-600 text-white text-sm">Delete</button>
+    </td>
+  </tr>
+</table>
+
+
+
+        </div>
+
+
+</div>
+</form>
+
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>
